@@ -91,7 +91,7 @@ class UserController {
       return apiResponse(
         res,
         200,
-        `You blocked the user <${currentUser.first_name}>`
+        `You blocked the user <${currentUser.username}>`
       );
     } catch (error) {
       next(ErrorAPI.internal(error.message));
@@ -113,7 +113,7 @@ class UserController {
       return apiResponse(
         res,
         200,
-        `You unblocked the user <${currentUser.first_name}>`
+        `You unblocked the user <${currentUser.username}>`
       );
     } catch (error) {
       next(ErrorAPI.internal(error.message));
