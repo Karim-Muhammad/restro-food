@@ -4,7 +4,7 @@ export default {
   env: process.env.NODE_ENV,
 
   serverDomain: process.env.SERVER_DOMAIN,
-  serverPort: process.env.SERVER_PORT,
+  serverPort: process.env.PORT || process.env.SERVER_PORT,
   server: `${process.env.SERVER_DOMAIN}:${process.env.SERVER_PORT}`,
   root: root,
   static: "./static/public",
