@@ -14,7 +14,7 @@
   "ts-node": {
     "files": true
   },
-  "files": ["./src/index.ts"],
+  "files": ["**/*.ts"],
 
   "lib": ["es2015"],
   "include": ["**/*.ts"],
