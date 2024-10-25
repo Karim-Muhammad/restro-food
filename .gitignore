@@ -1,0 +1,7 @@
+.env*
+.vscode/
+node_modules/
+notes/
+*.png
+dist/
+static/public/*
