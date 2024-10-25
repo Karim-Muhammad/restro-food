@@ -4,9 +4,8 @@
   "description": "fully functional rest api for ecommerce website",
   "main": "dist/server.js",
   "scripts": {
+    "dev": "nodemon --exec ts-node ./server.ts",
     "build": "tsc",
-    "dev": "npx ts-node server.ts",
-    "dev2": "ts-node-dev --respawn --transpile-only server.ts",
     "start": "tsc && node dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,7 +24,6 @@
     "inquirer": "^12.0.0",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.5.0"
   },

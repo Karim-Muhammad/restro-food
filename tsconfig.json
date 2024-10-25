@@ -5,11 +5,18 @@
     "target": "es6",
     "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "dist",
-    "typeRoots": ["./node_modules/@types", "./src/@types", "@types"],
+    "outDir": "./dist",
+    "typeRoots": ["./node_modules/@types", "./src/@types"],
     "types": ["node"],
     "skipLibCheck": true
   },
+
+  "ts-node": {
+    "files": true
+  },
+  "files": ["./src/index.ts"],
+
   "lib": ["es2015"],
-  "include": ["**/*.ts", "src/@types/**/index.d.ts"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
 }
